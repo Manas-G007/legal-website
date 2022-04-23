@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>krishan legal booking</title>
+        <meta name="author" content="ram">
+        <meta name="description" content="legal service">
+        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <link rel="stylesheet" type="text/css" href="./css/schedule.css">
+        <link rel="stylesheet" type="text/css" href="./css/calender.css">
+    </head>
+    <body>
+        <img src="./img/img(1).jpg" class="topimg">
+        <h1>krishna legal</h1>
+        <p>Leading Provider of Legal Counsel</p>
+        <div class="nav">
+            <div class="nav-item" style="margin-left:42%;"><a class="a" href="homepage.html">HOME</a></div>
+            <div class="nav-item"><a class="a" href="bookingpage.html">ONLINE BOOKING</a></div>
+        </div>
+        <img src="./img/logo-Meta.png" style="height: 25px;width:45px;float:right;">
+        <img src="./img/youtube.png" style="height: 25px;width:40px;float:right;">
+        <br><hr>
+        <a href="bookingpage.html"  class="b">◀ Back</a>
+        <header>Schedule Online</header>
+        <div class="container-body">
+            <div class="container">
+               <div id="dycalendar"></div>
+            </div>
+            <script src="./javascript/calendar.js"></script>
+            <script>
+                dycalendar.draw({
+                    target:'#dycalendar',
+                    type:'month',
+                    dayformat:'full',
+                    monthformat:'full',
+                    highlighttargetdate:true,
+                    prevnextbutton:'show'
+                })
+            </script>
+        </div>
+
+    </body>
+</html>

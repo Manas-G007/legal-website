@@ -1,0 +1,120 @@
+body{
+    background: linear-gradient(to bottom,white,lightblue,white);
+    text-transform: capitalize;
+    color:blue;
+    margin:0;
+    padding: 1% 0;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    border:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topimg{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+} 
+.topimg:hover{
+    opacity:0.6;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color:darkblue;
+}
+p{
+    text-align: center;
+    margin:3%;
+    line-height: 1.2;
+}
+.a{
+    text-decoration: none;
+    color:blue;
+    transition: background 1s;
+}
+.a:hover{
+    background: blue;
+    color:rgb(194, 243, 255);
+}
+.nav{
+    display:flex;
+}
+.nav-item{
+    padding:0.5%;
+    font-size:12px;
+}
+hr{
+    border:1.5px solid black;
+}
+.b{
+    color:blue;
+    margin:5px;
+    padding:5px;
+    text-decoration: none;
+    transition:all 1s;
+}
+.b:hover{
+    color:aqua;
+    background: blue;
+}
+header{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color:darkblue;
+}
+.container-body{
+    display:grid;
+    place-items:center;
+    margin:0;
+    padding:0;
+}
+.container{
+    position:relative;
+    margin-top:5%;
+    width:500px;
+    height:500px;
+    background:rgba(255,255,255, 0.514);
+    
+    border-radius:7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.103),
+                -5px -5px 5px rgba(255,255,255,1),
+                inset 5px 5px 5px rgba(0,0,0,.1),
+                inset -5px -5px 5px rgba(255,255,255,1);
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container #dycalendar{
+    width:100%;
+    padding:20px;
+}
+
+#dycalendar table{
+    width:100%;
+    margin-top:40px;
+}
+
+#dycalendar table td{
+    font-weight:100;
+    color:black;
+    padding:10px;
+    border-radius:10%;
+}
+#dycalendar table td:hover{
+    font-weight:100;
+    background:rgba(0, 0, 0, 0.705);
+    color:white;
+    padding:10px;
+}
+#dycalendar .dycalendar-header{
+    font-weight:700;
+    color:black;
+}
+#dycalendar .dycalendar-target-date{
+    color:white;
+}

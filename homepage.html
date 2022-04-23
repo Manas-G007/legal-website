@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>krishan legal</title>
+        <meta name="author" content="ram">
+        <meta name="description" content="legal service">
+        <meta name="viewport" content="width:device-width,initial-scale:1.0">
+        <link rel="stylesheet" type="text/css" href="./css/mainpage.css">
+    </head>
+    <body>
+        <img src="./img/img(1).jpg" class="topimg">
+        <h1>krishna legal</h1>
+        <p>Leading Provider of Legal Counsel</p>
+        <div class="nav">
+            <div class="nav-item" style="margin-left:45%;"><a href="homepage.html">HOME</a></div>
+            <div class="nav-item"><a href="bookingpage.html">ONLINE BOOKING</a></div>
+        </div>
+        <img src="./img/logo-Meta.png" style="height: 25px;width:45px;float:right;">
+        <img src="./img/youtube.png" style="height: 25px;width:40px;float:right;">
+        <br>
+        <hr><h2>welcome to krishna legal</h2>
+        <h3>A Tradition of Talent</h3><div class="p">
+        <p>With krishna legal, your case is our priority. Our partners and associates are committed to excellence, and have been successfully representing our clients since 2000. Take a look<span id="underscore">....</span>
+        <span id="more">at our site to find out more.this is the world number one facility</span></p>
+        </div> <button onclick="myFunction()" id="read_more" style="border:none;">READ MORE</button>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("underscore");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("read_more");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            }
+        </script>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">I / III</div>
+              <img src="./img/img_g(2).jpg" style="width:100%;height:38%;">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">II / III</div>
+              <img src="./img/img_gal(1.jpg" style="width:100%;height:38%;">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">III / III</div>
+              <img src="./img/img_g(3).jpg" style="width:100%;height:38%;">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+          </script>
+        <div class="grid">
+            <div class="grid-item" style="border:none;background:none;"></div>
+            <div class="grid-item"><img src="./img/grid_img1.jpg" class="grid-img"><br><note>express consultancy<hr>
+            1 hr<br>₹1000</note><br>
+            <button class="grid-button">BOOK NOW</button>
+            </div>
+            <div class="grid-item"><img src="./img/grid_img2.jpg" class="grid-img"><br><note>comprehensive analysis<hr>
+                1 hr<br>₹1500</note><br>
+                <button class="grid-button">BOOK NOW</button>
+            </div>
+            <div class="grid-item" style="border:none;background:none;"></div>
+        </div> 
+        <img src="./img/gallery.jpeg" width="100%" margin-bottom="0"> 
+        <div class="gallery">
+            <div class="gallery-item"><img src="./img/g_1.jpg.png" style="width:100%;height:100%"></div>
+            
+            <div class="gallery-item"><h6 style="font-size: 19px;font-weight:bold;color:black;">Comprehensive Analysis</h6>
+                <h6 style="font-size:16px;color:darkblue">Professional & Thorough</h6>
+                <button class="grid-button">Get in touch</button></div>
+            
+                <div class="gallery-item"><img src="./img/g_2.jpg" style="width:100%;height:100%"></div>
+            <div class="gallery-item"><h6 style="font-size: 19px;font-weight:bold;color:black;">Express Consultation</h6>
+                <h6 style="font-size:16px;color:darkblue">Customized Approach</h6>
+                <button class="grid-button">Get in touch</button></div>
+            <div class="gallery-item"><img src="./img/g_3.jpg" style="width:100%;height:100%"></div>
+            
+            <div class="gallery-item"><h6 style="font-size: 19px;font-weight:bold;color:black;">Introductory Session</h6>
+                <h6 style="font-size:16px;color:darkblue">Expert Guidance</h6>
+                <button class="grid-button">Get in touch</button></div>
+        </div>
+        <div class="grid-end">
+            <div class="grid-end-item"><img src="./img/logo-legal.png"></div>
+            <div class="grid-end-item"><note style="font-size: 20px;font-weight:bold;color:black;">krishna legal Client</note><br>
+            <note style="font-size:16px;color:darkblue">Valued Feedback</note><br>
+            <p style="font-size:11px;text-align: left;">This is your Testimonial quote. Use this space to share reviews about you, your services or your business. Get site visitors excited to jump into action with you!
+            </p>
+            </div>
+        </div>
+        <div class="f">
+            <form action="./php/feed.php" method="post">
+                <label>GET IN TOUCH</label><br><label style="font-size:12px;font-weight: 300;">ramgupu5@gmail.com</label>
+                    <div class="insider"><input type="text" placeholder="Name" name="name"></div>
+                    <div class="insider"><input type="email" placeholder="Email" name="email"></div>
+                    <div class="insider"><input type="text" placeholder="Subject" name="topic"></div>
+                    <div class="insider"><textarea placeholder="Type your message here..." name="message"></textarea></div>
+                    <div class="insider"><input class="but" type="submit" value="Submit" ></div>
+            </form>
+        </div>
+        <div class="foter">working location</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.6696940504214!2d77.22106852587753!3d28.52951689559306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce18a330db357%3A0x44215ab8db3be954!2sSAKET%20COURT%2C%20Sector%206%2C%20Pushp%20Vihar%2C%20New%20Delhi%2C%20Delhi%20110017!5e0!3m2!1sen!2sin!4v1649666802734!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="foter">@2022 copyright reserved by top creater ever existed</div>
+    </body>
+</html>

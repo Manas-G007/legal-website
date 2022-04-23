@@ -1,0 +1,290 @@
+body{
+    background:linear-gradient(to bottom,white,lightblue,white);
+    text-transform: capitalize;
+    color:blue;
+    margin:0;
+    padding: 1% 0;
+    border:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    color:darkblue;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    color:darkblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    text-align:center;
+    font-size:25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.p{
+  color:white;
+  background: darkblue;
+  transition:background 1s;
+}
+.p:hover{
+  background: rgba(0,0,255,0.5);
+}
+p{
+    text-align: center;
+    margin:3%;
+    line-height: 1.2;
+}
+hr{
+    border:1.5px solid black;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    transition: background 1s;
+}
+a:hover{
+    background: blue;
+    color:rgb(194, 243, 255);
+}
+
+.nav{
+    display:flex;
+}
+.nav-item{
+    padding:0.5%;
+    font-size:12px;
+}
+.first{
+    color:white;
+    background: darkblue;
+    margin:1% 45%;
+    padding:1%;
+    border-radius: 0 20px 0 20px;
+}
+.topimg{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:300px;
+}
+.topimg:hover{
+    opacity:0.6;
+}
+#more{
+    display:none;
+}
+#read_more{
+    color:white;
+    background:rgb(0, 0, 255,0.9);
+    padding:1%;
+    display:block;
+    width:20%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: aqua;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 30px 30px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,255,0.6);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin:0 5px;
+  background-color:aqua;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: darkblue;
+}
+.gallery{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap:0.8px;
+}
+.gallery-item{
+  background: rgba(255,255,255,0.9);
+}
+h6{
+  text-align: center;
+  line-height: 0;
+}
+.grid{
+  display:grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  height:auto;
+  grid-gap: 10px;
+  color:black;
+  line-height: 2;
+  margin:2% 0;
+}
+.grid-item{
+  padding: 3px;
+  border:2px solid black;
+  background:white;
+}
+
+.grid-img{
+  padding:0;
+  width:100%;
+  height:50%;
+}
+.grid-img:hover{
+  opacity:0.8;
+}
+.grid-button{
+  border:none;
+  background:black;
+  color:white;
+  transition:linear;
+  transition-duration:1s;
+  padding:3px;
+  margin:2px 35%;
+}
+.grid-button:hover{
+  background: rgba(0,0,0,0.6);
+}
+iframe{
+  width:100%;
+  height:400px;
+  border:none;
+}
+.grid-end{
+  background:  linear-gradient(to top,rgba(255,255,255,1),rgba(0,0,0,0));
+  display:flex;
+  height:auto;
+  width:100%;
+  padding: 2%;
+  line-height: 3;
+}
+.grid-end-item{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(25, 0, 255);
+}
+.f{
+  display:grid;
+  background: white;
+  border:0.6px solid black;
+  padding: 5px;
+  text-align: center;
+  animation: fade 10s;
+
+
+}
+label{
+  color:black;
+  font-size:21px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  text-align:justify;
+  text-transform: none;
+}
+input{
+  border:0.5px solid black;
+  padding: 1%;
+  margin:0.5%;
+  width:60%;
+  transition: width 0.5s linear;
+}
+input:hover{
+  width:62%;
+}
+textarea{
+  border:0.5px solid black;
+  width:60%;
+  margin:0 0.8%;
+}
+.but{
+  color:white;
+  background:black;
+  width:25%;
+  transition: all;
+  transition-duration: 0.7s;
+}
+.but:hover{
+  color:black;
+  background:white;
+  width:27%;
+}
+
+.foter{
+  text-align: center;
+  padding: 1%;
+  color:white;
+  animation: shine;
+  background:darkblue;
+  transition:background 1s;
+  margin-bottom: 0;
+}
+.foter:hover{
+  background: rgba(0,0,255,0.5);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes shine{
+  0%{background: 
+    linear-gradient(to right,black,white,rgba(0,0,0,0))}
+  25%{background: 
+    linear-gradient(to right,white ,black ,white ,rgba(0,0,0,0))}  
+  50%{background: 
+    linear-gradient(to right,rgba(0,0,0,0) ,white ,black ,white ,rgba(0,0,0,0))}
+  75%{background: 
+    linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0),white ,black ,rgba(0,0,0,0))}
+  100%{background: 
+    linear-gradient(to right,rgba(0,0,0,0),white ,black)}  
+  }
+@keyframes fade {
+  from {opacity: 0.3}
+  to {opacity: 1}
+}
